@@ -89,6 +89,20 @@ class _MyHomePageState extends State<MyHomePage>{
                               ),
                             ),
                           ),
+                          SizedBox(
+                            width: MediaQuery.of(context).size.width-120,),
+                          Container(
+                            alignment: Alignment.topRight,
+                            child: IconButton(
+                                icon: Icon(Icons.menu),
+                                onPressed: (){},
+                              color: Colors.white,
+                              iconSize: 28.0,
+                                ),
+                          ),
+                          SizedBox(
+                            height: 15.0,
+                          ),
                         ],
                       ),
                     ],

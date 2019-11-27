@@ -41,6 +41,11 @@ flutter:
   uses-material-design: true
   assets:
     - images/profile.jpg
+    - images/bread.jpg
+    - images/breadfull.jpg
+    - images/hotdog.jpeg
+    - images/burger.jpeg
+    - images/donut.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

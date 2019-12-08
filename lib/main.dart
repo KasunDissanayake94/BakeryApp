@@ -13,8 +13,6 @@ class MyApp extends StatelessWidget{
       home: MyHomePage(),
     );
   }
-
-
 }
 
 class MyHomePage extends StatefulWidget{
@@ -111,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage>{
                       Padding(
                         padding: EdgeInsets.only(left: 15.0),
                         child: Text(
-                          'Wecome to Bakery',
+                          'Welcome to Bakery',
                           style: TextStyle(
                             fontSize: 25.0,
                             fontWeight: FontWeight.bold,
@@ -251,7 +249,10 @@ class _MyHomePageState extends State<MyHomePage>{
               ),
             ],
           ),
-          specialItemCard('Bread', 'images/breadfull.jpg',false)
+          specialItemCard('Bread', 'images/breadfull.jpg',false),
+          specialItemCard('Hot Dog', 'images/hotdog.jpeg',false),
+          specialItemCard('Burger', 'images/burger.jpeg',false),
+          specialItemCard('Doenut', 'images/donut.jpeg',false),
         ],
       ),
     );

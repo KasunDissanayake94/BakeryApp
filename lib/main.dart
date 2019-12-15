@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:untitled1/payment.dart';
 
 void main() => runApp(MyApp());
 
@@ -249,10 +250,10 @@ class _MyHomePageState extends State<MyHomePage>{
               ),
             ],
           ),
-          specialItemCard('Bread', 'images/breadfull.jpg',false),
-          specialItemCard('Hot Dog', 'images/hotdog.jpeg',false),
-          specialItemCard('Burger', 'images/burger.jpeg',false),
-          specialItemCard('Doenut', 'images/donut.jpeg',false),
+          specialItemCard('Bread', 'images/breadfull.jpg',false , context),
+          specialItemCard('Hot Dog', 'images/hotdog.jpeg',false , context),
+          specialItemCard('Burger', 'images/burger.jpeg',false , context),
+          specialItemCard('Doenut', 'images/donut.jpeg',false , context),
         ],
       ),
     );
@@ -260,7 +261,7 @@ class _MyHomePageState extends State<MyHomePage>{
 
 }
 
-Widget specialItemCard (String title, String imagePath, bool loveStates){
+Widget specialItemCard (String title, String imagePath, bool loveStates,BuildContext context){
 
   return Padding(
     padding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
@@ -325,35 +326,17 @@ Widget specialItemCard (String title, String imagePath, bool loveStates){
               SizedBox(height: 5.0),
               Row(
                 children: <Widget>[
-                  SizedBox(width: 35.0),
-                  Container(
-                    height: 44.0,
-                    width: 50.0,
+                  RaisedButton(
+                    textColor: Colors.yellow,
                     color: Colors.black,
-                    child: Center(
-                      child: Text(
-                        '\$300',
-                        style: TextStyle(
-                            color: Colors.yellow,
-                            fontWeight: FontWeight.bold
-                        ),
-                      ),
-                    ),
-                  ),
-                  Container(
-                    height: 44.0,
-                    width: 100,
-                    color: Colors.black,
-                    child: Center(
-                      child: Text(
-                        'Add to My Cart',
-                        style: TextStyle(
-                          color: Colors.amber,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
+                    child: Text("Add to cart"),
+                    onPressed: (){
+                      Navigator.of(context).push(MaterialPageRoute<Null>(builder: (BuildContext context) {
+  return new Payment();
+                      }));
+                    },
                   )
+
                 ],
               )
             ],

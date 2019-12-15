@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:square_in_app_payments/in_app_payments.dart';
+import 'package:square_in_app_payments/models.dart';
 
 class Payment extends StatelessWidget {
   @override
@@ -6,41 +8,37 @@ class Payment extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('First Screen'),
+        backgroundColor: Colors.purpleAccent,
       ),
       body: Center(
         child: RaisedButton(
           color: Colors.red,
           child: Text('Go to Second Screen'),
-          onPressed: () {
-            //Use`Navigator` widget to push the second screen to out stack of screens
-            Navigator.of(context)
-                .push(MaterialPageRoute<Null>(builder: (BuildContext context) {
-              return new SecondScreen();
-            }));
-          },
+          onPressed : _creditCard,
         ),
       ),
     );
+  }
+
+  void _creditCard(){
+    InAppPayments.setSquareApplicationId("XXXXXXXXXXXXXXXXXXXXXXXXX");
+    InAppPayments.startCardEntryFlow(
+      onCardNonceRequestSuccess:_success,
+      onCardEntryCancel: entryCancel,
+    );
+  }
+
+  void _success(CardDetails cardDetails){
+    InAppPayments.completeCardEntry(
+      onCardEntryComplete: _cardEntryComplete
+    );
+  }
+  void _cardEntryComplete(){
+
+  }
+
+  void entryCancel(){
+    print("Cancel");
   }
 }
 
-class SecondScreen extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Second Screen'),
-      ),
-      body: Center(
-        child: RaisedButton(
-          color: Colors.red,
-          child: Text('Go back to First Screen'),
-          onPressed: () {
-            //Use`Navigator` widget to pop oir go back to previous route / screen
-            Navigator.pop(context);
-          },
-        ),
-      ),
-    );
-  }
-}

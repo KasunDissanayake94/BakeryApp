@@ -1,7 +1,6 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:untitled1/payment.dart';
+import 'package:untitled1/Cart.dart';
+import 'package:untitled1/Details.dart';
 
 void main() => runApp(MyApp());
 
@@ -343,7 +342,7 @@ Widget specialItemCard (String title, String imagePath, bool loveStates, String 
                     child: Text("Add to cart"),
                     onPressed: (){
                       Navigator.of(context).push(MaterialPageRoute<Null>(builder: (BuildContext context) {
-  return new Payment();
+  return new Cart();
                       }));
                     },
                   )

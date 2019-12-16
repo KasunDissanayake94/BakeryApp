@@ -250,10 +250,10 @@ class _MyHomePageState extends State<MyHomePage>{
               ),
             ],
           ),
-          specialItemCard('Bread', 'images/breadfull.jpg',false , context),
-          specialItemCard('Hot Dog', 'images/hotdog.jpeg',false , context),
-          specialItemCard('Burger', 'images/burger.jpeg',false , context),
-          specialItemCard('Doenut', 'images/donut.jpeg',false , context),
+          specialItemCard('Bread', 'images/breadfull.jpg',false ,'Rs 70.00', context),
+          specialItemCard('Hot Dog', 'images/hotdog.jpeg',false ,'Rs 50.00', context),
+          specialItemCard('Burger', 'images/burger.jpeg',false ,'Rs 100.00', context),
+          specialItemCard('Doenut', 'images/donut.jpeg',false ,'Rs 50.00', context),
         ],
       ),
     );
@@ -261,7 +261,7 @@ class _MyHomePageState extends State<MyHomePage>{
 
 }
 
-Widget specialItemCard (String title, String imagePath, bool loveStates,BuildContext context){
+Widget specialItemCard (String title, String imagePath, bool loveStates, String price, BuildContext context){
 
   return Padding(
     padding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
@@ -326,6 +326,17 @@ Widget specialItemCard (String title, String imagePath, bool loveStates,BuildCon
               SizedBox(height: 5.0),
               Row(
                 children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.only(right: 10.0),
+                    child: Text(price,
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 15.0,
+                          fontWeight: FontWeight.bold
+                      ),
+                    ),
+                  ),
+
                   RaisedButton(
                     textColor: Colors.yellow,
                     color: Colors.black,

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:untitled1/Cart.dart';
-import 'package:untitled1/Details.dart';
 
 void main() => runApp(MyApp());
 

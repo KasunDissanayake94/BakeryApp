@@ -13,68 +13,68 @@ class ProductsModel extends Model {
 
   ProductsModel() {
     _products.add(Product(
-      'Beef Chilli',
-      'Freshly cooked yummy beef chilli dry',
-      120,
-      'https://assets.epicurious.com/photos/578d20a00103fcdb27360fe8/master/pass/beef-and-bean-chili.jpg',
+      'PRAWN BUN',
+      'Category: Savouries',
+      65,
+      'http://theroyalbakery.com/wp-content/uploads/2018/08/Prawn-Bun-600x588.jpg',
     ));
 
     _products.add(Product(
-      'Masala Dosai',
-      'Yummy and tasty hot dosai stuffed with potattoghfhgfhh',
-      50,
-      'http://www.bhatkallys.com/wp-content/uploads/2016/12/22796096d9c63708fb5bdddd27fa10fe.jpg',
+      'VEGETABLE BURGER',
+      'Category: Savouries',
+      85,
+      'http://theroyalbakery.com/wp-content/uploads/2018/08/Vegetable-Burger.jpg',
     ));
 
     _products.add(Product(
-      'Veg Fried Rice',
-      'Veg friedn rice with Lime juice combo',
-      100,
+      'VEGETABLE CHINESE ROLL',
+      'Category: Savouries',
+      40,
       'https://www.dinneratthezoo.com/wp-content/uploads/2016/10/veggie-fried-rice-6-500x500.jpg',
     ));
 
     _products.add(Product(
-      'Beef Chilli',
-      'Freshly cooked yummy beef chilli dry',
-      120,
-      'https://assets.epicurious.com/photos/578d20a00103fcdb27360fe8/master/pass/beef-and-bean-chili.jpg',
-    ));
-
-    _products.add(Product(
-      'Masala Dosai',
-      'Yummy and tasty hot dosai stuffed with potattoghfhgfhh',
-      50,
-      'http://www.bhatkallys.com/wp-content/uploads/2016/12/22796096d9c63708fb5bdddd27fa10fe.jpg',
-    ));
-
-    _products.add(Product(
-      'Veg Fried Rice',
-      'Veg friedn rice with Lime juice combo',
+      'CHICKEN PIZZA',
+      'Category: Savouries',
       100,
-      'https://www.dinneratthezoo.com/wp-content/uploads/2016/10/veggie-fried-rice-6-500x500.jpg',
+      'http://theroyalbakery.com/wp-content/uploads/2018/08/Chicken-Pizza-600x450.jpg',
+    ));
+
+    _products.add(Product(
+      'CHICKEN AND MUSHROOM PASTRY',
+      'Category: Savouries',
+      60,
+      'http://theroyalbakery.com/wp-content/uploads/2018/08/Chicken-Mushroom-Pastry-600x744.jpg',
+    ));
+
+    _products.add(Product(
+      'TRUFFLE GATEAUX',
+      'Category: Savouries',
+      1400,
+      'http://theroyalbakery.com/wp-content/uploads/2016/11/10.jpg',
     ));
 
     _hotelList.add(Hotel(
-        'Le Arabia',
-        'https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/frn9fykz5imcrbtipzzi',
-        'North Indian',
-        '20-30 Mins',
-        4.2,
+        'Butter Boutique',
+        'http://static.sundaytimes.lk/wp-content/uploads/2016/03/Butter-boutique.jpg',
+        'Cafe, Vegetarian Friendly',
+        '8:00 AM - 8:00 PM',
+        4.5,
         500));
 
     _hotelList.add(Hotel(
-        'Halais Dum Briyani',
-        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjuNtWLmPFX1CPjh2-4NbJm13abZys0Y3jCtt6AjIaJB3TrdAecw',
-        'Indian, North Indian',
-        '30-40 Mins',
-        4.3,
+        'The Coffee Stop',
+        'https://cinnamonweb.blob.core.windows.net/cinnamonweb-prd/dining_wellness/coffee-stop-grand-530X420.jpg',
+        'Bakeries, Cafe, Vegetarian Friendly',
+        '8:00 AM - 8:00 PM',
+        4.5,
         500));
 
     _hotelList.add(Hotel(
-        'Al-Saj',
-        'https://media-cdn.tripadvisor.com/media/photo-s/08/82/ac/ff/saj-alreef-gullan-street.jpg',
-        'South Indian, North Indian',
-        '25-30 Mins',
+        'BreadTalk - Lipton Circus',
+        'https://www.yamu.lk/wp-content/uploads/2013/03/DSCF4363-600x398.jpg',
+        'Bakeries, American, Singaporean',
+        '8:00 AM - 8:00 PM',
         4.0,
         500));
 

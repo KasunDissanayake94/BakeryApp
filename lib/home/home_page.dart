@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:untitled1/scoped-model/products_model.dart';
-import 'package:untitled1/hotel/hotel_list.dart';
+import 'package:untitled1/hotel/bakery_list.dart';
 
 class HomePage extends StatelessWidget {
   @override

@@ -1,6 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:untitled1/scoped-model/products_model.dart';
+import 'package:untitled1/product/cart_list.dart';
 
 class CartPage extends StatelessWidget {
   @override
@@ -13,6 +15,7 @@ class CartPage extends StatelessWidget {
 
             ],
             ),
+            body: Cart(),
           );
         }
     );

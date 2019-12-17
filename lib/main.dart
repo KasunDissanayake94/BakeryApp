@@ -1,9 +1,11 @@
+
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'scoped-model/products_model.dart';
 import 'auth/auth_page.dart';
 import 'home/home_page.dart';
-
+import 'pages/product_admin.dart';
+import 'pages/cart_ui.dart';
 
 main() => runApp(MyApp());
 
@@ -23,7 +25,8 @@ class MyApp extends StatelessWidget {
         routes: {
           '/': (BuildContext context) => AuthPage(),
           '/home': (BuildContext context) => HomePage(),
-
+          '/admin': (BuildContext context) => ProductAdmin(),
+          '/cart': (BuildContext context) => CartPage()
         },
       ),
     );

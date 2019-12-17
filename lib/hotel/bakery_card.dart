@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import '../scoped-model/products_model.dart';
 import '../model/Hotel.dart';
-import 'package:untitled1/pages/hotel_ui.dart';
+import 'package:untitled1/pages/bakery_ui.dart';
 
 class HotelListView extends StatelessWidget {
   final bool isVertical;

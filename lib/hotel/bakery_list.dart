@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/hotel/hotel_card.dart';
+import 'package:untitled1/hotel/bakery_card.dart';
 
 class HotelList extends StatelessWidget {
   @override

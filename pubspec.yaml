@@ -54,6 +54,8 @@ flutter:
     - images/hotdog.jpeg
     - images/burger.jpeg
     - images/donut.jpeg
+    - images/bakery_logo.png
+    - images/homepage.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

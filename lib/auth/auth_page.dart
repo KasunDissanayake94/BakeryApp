@@ -32,9 +32,7 @@ class _AuthpageState extends State<AuthPage> {
         decoration: BoxDecoration(
           color: Colors.black,
           image: DecorationImage(
-            image: NetworkImage(
-              'http://www.gandummas.co.id/wp-content/uploads/2015/02/Seven-Bakery.jpg',
-            ),
+              image: new AssetImage('images/homepage.jpg'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(Colors.black.withOpacity(0.5), BlendMode.dstATop)
             // colorFilter: ColorFilter.mode(
@@ -50,8 +48,7 @@ class _AuthpageState extends State<AuthPage> {
                 Container(
                   height: 150,
                   width: 150,
-                  child: Image.network(
-                      'https://www.pngkey.com/png/full/303-3039991_burrito-icon-png-chef-icon-png-white.png'),
+                  child:Image.asset("images/bakery_logo.png"),
                 ),
                 Container(
                   margin: EdgeInsets.only(bottom: 50),

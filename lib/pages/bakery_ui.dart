@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/model/Hotel.dart';
+import 'package:untitled1/model/Bakery.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:untitled1/scoped-model/products_model.dart';
 import 'package:untitled1/model/Product.dart';

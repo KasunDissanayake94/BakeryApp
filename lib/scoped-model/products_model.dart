@@ -1,6 +1,6 @@
 import 'package:scoped_model/scoped_model.dart';
 import 'package:untitled1/model/Product.dart';
-import 'package:untitled1/model/Hotel.dart';
+import 'package:untitled1/model/Bakery.dart';
 
 import 'package:http/http.dart' as http;
 import 'dart:convert';
